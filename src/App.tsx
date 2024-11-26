@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Menu, Home, Users, Activity, Target, Heart, Box, Phone, DollarSign, PieChart, Package } from 'lucide-react';
+import { Menu, Users, Activity, Target, Heart, Box, Phone, DollarSign, PieChart, Package, BarChart } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import KeyPartners from './components/KeyPartners';
 import KeyActivities from './components/KeyActivities';
 import ValueProposition from './components/ValueProposition';
 import CustomerRelationships from './components/CustomerRelationships';
 import CustomerSegments from './components/CustomerSegments';
-import KeyResources from './components/KeyResources';
+import KeyResources from './components/KeyResources'; 
 import Channels from './components/Channels';
 import CostStructure from './components/CostStructure';
 import RevenueStreams from './components/RevenueStreams';
 import PricingPlans from './components/PricingPlans';
+import Presupuesto from './components/Presupuesto';
 
 function App() {
   const [activeSection, setActiveSection] = useState('keyPartners');
@@ -27,6 +28,7 @@ function App() {
     { id: 'costStructure', label: 'Estructura de Costes', icon: DollarSign },
     { id: 'revenueStreams', label: 'Fuentes de Ingresos', icon: PieChart },
     { id: 'pricingPlans', label: 'Planes y Tarifas', icon: Package },
+    { id: 'presupuesto', label: 'Presupuesto', icon: BarChart },
   ];
 
   const renderContent = () => {
@@ -51,6 +53,8 @@ function App() {
         return <RevenueStreams />;
       case 'pricingPlans':
         return <PricingPlans />;
+        case 'presupuesto':
+        return <Presupuesto />;
       default:
         return <KeyPartners />;
     }

@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 const plans = [
   {
     name: 'Plan Básico',
-    price: '100€ - 300€',
+    price: '50€ - 200€',
     color: 'blue',
     features: [
       'Publicación ocasional en redes sociales',
@@ -15,7 +15,7 @@ const plans = [
   },
   {
     name: 'Plan Medio',
-    price: '150€ - 400€',
+    price: '100€ - 300€',
     color: 'purple',
     features: [
       'Publicidad básica en redes sociales y Google',
@@ -27,7 +27,7 @@ const plans = [
   },
   {
     name: 'Plan Avanzado',
-    price: '200€ - 500€',
+    price: '150€ - 400€',
     color: 'green',
     features: [
       'Publicidad regular en redes sociales y Google',
